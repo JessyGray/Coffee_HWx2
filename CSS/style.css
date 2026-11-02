@@ -2,9 +2,12 @@
     margin: 0;
 }
 
+.main {
+    position: relative;
+}
 body {
-    background-color: whitesmoke;
-    font-family: "Raleway", sans-serif;
+    background-color: #f6efe6;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 .header {
@@ -12,6 +15,7 @@ body {
     background-image: url("../Images/coffee-bgnd.jpeg");
     background-size: cover;
     background-position: center;
+    border-radius: 0 0 32px 32px;
     /* padding-top: 1px; */
     /* border-top: 1px solid transparent; */
     /* padding-top: 133px;
@@ -20,29 +24,39 @@ body {
 
 .header>h1 {
     font-size: 100px;
-    font-family: "Covered By Your Grace", cursive;
-    color: rgba(3, 150, 100, 0.75);
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    color: #f6efe6;
+    text-shadow: 0 4px 18px rgba(30, 18, 12, 0.7);
     text-align: center;
     padding-top: 133px;
     /* margin-top: 132px; */
 }
 
-.main td {
+.coffee {
     margin: 100px 0;
-    border-bottom: 1px solid #e4bb97;
+    border-bottom: 1px solid #d9c2a7;
     padding-bottom: 60px;
+    min-height: 100px;
 }
 
-.main td>h2 {
+
+.coffee>h2 {
+    font-family: "Playfair Display", serif;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 10px 0;
+    margin-bottom: 20px;
     text-align: center;
-    background-color: #aa8eb5;
+    color: #f6efe6;
+    background-color: #4a2c1d;
+    border-radius: 10px;
     text-transform: uppercase;
 }
 
-.main td>p {
-    color: #454;
+.main div>p {
+    color: #3b2a20;
     font-weight: 500;
     padding: 0 5px;
     text-align: justify;
@@ -50,10 +64,35 @@ body {
     text-indent: 32px;
 }
 
-.main td>a {
-    color: #214e34;
-    font-weight: 600;
+.main div>a {
+    display: inline-block;
+    margin: 16px 5px 0;
+    padding: 6px 14px;
+    border: 1px solid #a0632f;
+    border-radius: 999px;
+    color: #a0632f;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
+}
+
+.main div>a:hover {
+    color: #f6efe6;
+    background-color: #4a2c1d;
+    border-color: #4a2c1d;
+}
+
+.left {
+position: absolute;
+    left: 0;
+    width: 49.5%;
+    top: 0;
+}
+
+.right {
+position: absolute;
+    right: 0;
+    width: 49.5%;
+    top: 0;
 }
